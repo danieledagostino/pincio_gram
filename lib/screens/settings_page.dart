@@ -1,0 +1,16 @@
+import 'package:flutter/material.dart';
+import 'page_menu.dart'; // Import the page menu file
+
+class SettingsPage extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      appBar: AppBar(
+        title: Text('Settings'),
+      ),
+      body: Center(
+        child: Text('Welcome to the Settings Page!'),
+      ),
+    );
+  }
+}
