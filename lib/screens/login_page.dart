@@ -3,12 +3,16 @@ import 'package:flutter_telegram_login/flutter_telegram_login.dart';
 import 'package:flutter_dotenv/flutter_dotenv.dart';
 import '../services/telegram_client.dart';
 
+import 'package:tdlib/td_api.dart' as tdApi;
+import 'package:tdlib/tdlib.dart';
+
 class LoginPage extends StatefulWidget {
   @override
   _LoginPageState createState() => _LoginPageState();
 }
 
 class _LoginPageState extends State<LoginPage> {
+  int _clientId = 0;
   final _phoneController = TextEditingController();
   final _codeController = TextEditingController();
 
